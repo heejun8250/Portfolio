@@ -66,7 +66,7 @@ const Experience = () => {
             <li>성향에 기반한 맞춤 일정 추천 기능</li>
             <li>동행 신청 및 수락 기능</li>
             <li>채팅 및 리뷰 기능</li>
-            <li>동행</li>
+            <li>동행온도</li>
           </div>
         </ProjectBox>
 
