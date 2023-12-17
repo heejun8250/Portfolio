@@ -15,7 +15,6 @@ const Introduce = () => {
           <br />팀의 성공을 위해 열정, 노력, 그리고 협업 능력을 기여할 준비가 되어 있습니다.
           <br/>
           <br/>
-          <a href='https://hyper-scent-a3a.notion.site/4445ddf58d4f412195194f445ca009a4?pvs=4'>자기소개서</a>
       </IntroTextWrap>
     </>
   )
