@@ -13,30 +13,6 @@ const Experience = () => {
       <DivLine/>
       <ExTitleWrap>Experience</ExTitleWrap>
       <ExBox>
-        {/* <li className='pjType'>Pesonal Project</li>
-        <h2>Project Name</h2>
-        <span>테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트</span>
-        <ProjectBox>
-          <span className='pjTitle'>프로젝트 기간</span>
-          <span className='pjContent'>2023.00 ~ 2023.00</span>
-        </ProjectBox>
-        <hr/>
-        <ProjectBox>
-          <span className='pjTitle'>사용 기술</span>
-          <span className='pjContent'>React.js, node.js, .............</span>
-        </ProjectBox>
-        <hr/>
-        <ProjectBox>
-          <span className='pjTitle'>구현 기능</span>
-          <div>
-            <li>aaaaa</li>
-            <li>bbbbb</li>
-            <li>ccccc</li>
-          </div>
-        </ProjectBox>
-
-        <br/> */}
-
         <li className='pjType'>Team Project</li>
         <a href='/tm'>1. TravelMate</a>
         <span className='pjExplain'>- 성향·리뷰기반 동행자 추천 및 매칭 플랫폼</span>
@@ -84,7 +60,7 @@ const Experience = () => {
         <hr/>
         <ProjectBox>
           <span className='pjTitle'>사용 기술</span>
-          <span className='pjContent'>Kotlin / Android Studio / Node.js / MySQL / Github / Figma / (Firebase)</span>
+          <span className='pjContent'>Kotlin / Android Studio / Node.js / MySQL / Github / Figma</span>
         </ProjectBox>
         <hr/>
         <ProjectBox>
@@ -180,6 +156,6 @@ const ProjectBox = styled.div`
 
 const DivLine = styled.div`
   margin: 50px 0;
-  height: 2px;
+  height: 1px;
   background-color: lightgray;
 `

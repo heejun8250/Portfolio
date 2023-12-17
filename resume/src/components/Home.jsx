@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <HomeField>
       <MyInfo />
-      <DivLine2 />
+      <DivLine />
       <Introduction />
       <DivLine />
       <Skill />
@@ -44,10 +44,6 @@ const HomeField = styled.div`
 
 const DivLine = styled.div`
   margin: 50px 0;
-  height: 2px;
-  background-color: lightgray;
-`
-
-const DivLine2 = styled(DivLine)`
   height: 1px;
+  background-color: lightgray;
 `
