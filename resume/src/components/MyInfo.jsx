@@ -5,7 +5,7 @@ const MyInfo = () => {
   return (
     <InfoBox>
         <MyInfoBox>
-          <img src="images/profile12.jpg" width={210} height={230} />
+          <img src="images/exImg.jpeg" width={210} height={230} />
           <div className="info_box">
             <div className="name_box">
               <div className="in_name_box">
@@ -21,10 +21,6 @@ const MyInfo = () => {
               <p>GitHub.</p>
               <a href='https://github.com/heejun8250'>https://github.com/heejun8250</a>
             </ConDiv>
-            {/* <ConDiv>
-              <p>Notion.</p>
-              <a href='https://hyper-scent-a3a.notion.site/TEST-05d4e50785f04be39594f5f51903cf7d?pvs=4'>https://hyper-scent-a3a.notion.site/TEST-05d4e50785f04be39594f5f51903cf7d?pvs=4</a>
-            </ConDiv> */}
           </div>
         </MyInfoBox>
       </InfoBox>
