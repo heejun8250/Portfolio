@@ -105,6 +105,7 @@ const ExBox = styled.div`
     font-weight: bold;
     margin: 15px 0;
     text-decoration: none;
+    width: fit-content;
 
     &:hover{
       color: blue;
