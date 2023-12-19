@@ -32,7 +32,6 @@ const HeaderArea = styled.div`
   box-shadow: rgb(220, 220, 220) 0px 2px 5px;
   left: 0px;
     a {
-      margin-left: 20px;
       color: black;
       font-size: 20px;
       font-weight: 500;
