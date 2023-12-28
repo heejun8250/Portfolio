@@ -28,7 +28,7 @@ const Experience = () => {
         <hr/>
         <ProjectBox>
           <span className='pjTitle'>사용 기술</span>
-          <span className='pjContent'>React.js / Firebase / Python / Flask / Github / KakaoMap API / 
+          <span className='pjContent'> VS Code / React.js / Firebase / Python / Flask / Github / KakaoMap API / 
             <br/> 로지스틱 회귀
           </span>
         </ProjectBox>
@@ -36,6 +36,7 @@ const Experience = () => {
         <ProjectBox>
           <span className='pjTitle'>구현 기능</span>
           <div className='pjContent'>
+            <li>로그인, 회원가입 기능</li>
             <li>여행 성향 설문조사 기능</li>
             <li>여행일정 및 동행자 모집글 등록 기능</li>
             <li>여행일정 드래그앤드랍 기능</li>
@@ -50,7 +51,7 @@ const Experience = () => {
         <span className='pjExplain'>- 액티브 시니어층을 위한 모임 커뮤니티 플랫폼 앱</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
-          <span className='pjContent'>2023.10 ~ 진행 중</span>
+          <span className='pjContent'>2023.10 ~ 2023.12 (약 6주)</span>
         </ProjectBox>
         <hr/>
         <ProjectBox>
@@ -60,19 +61,41 @@ const Experience = () => {
         <hr/>
         <ProjectBox>
           <span className='pjTitle'>사용 기술</span>
-          <span className='pjContent'>Kotlin / Android Studio / Node.js / MySQL / Github / Figma</span>
+          <span className='pjContent'>Android Studio / Kotlin / Node.js / MySQL / Retrofit2 / JWT / Bcrypt / Github / Figma</span>
         </ProjectBox>
         <hr/>
         <ProjectBox>
           <span className='pjTitle'>구현 기능</span>
           <div className='pjContent'>
-            <li>모임 검색 및 생성 기능</li>
-            <li>모임 관리 및 일정 생성 기능</li>
-            <li>게시판 기능</li>
+            <li>로그인, 회원가입/탈퇴 기능</li>
+            <li>회원정보 수정 기능</li>
+            <li>모임 관련 기능 : 검색, 생성, 가입, 탈퇴</li>
+            <li>일정 관련 기능 : 생성, 수정, 참가, 취소</li>
+            <li>게시판 기능 : 게시글 등록, 수정, 삭제</li>
+            <li>댓글 기능 : 댓글 등록, 삭제</li>
             <li>뱃지 시스템 기능</li>
             <li>사진첩 기능</li>
             <li>채팅 기능</li>
           </div>
+        </ProjectBox>
+        <br/>
+        <br/>
+        <li className='pjType'>Personal Project</li>
+        <p>1. Portfolio Page</p>
+        <span className='pjExplain'>(현재 페이지)</span>
+        <span className='pjExplain'>- 저를 소개하고 교육기간 동안 수행한 프로젝트를 정리하기 위해 만든 포트폴리오 페이지입니다.</span>
+        <span className='pjExplain'>- React.js를 사용하였고 화면 크기에 따라 변화하는 반응형 웹사이트로 제작하였습니다.</span>
+        <span className='pjExplain'>- Styled-components를 사용해 보고자 디자인은 Styled-components를 사용하여 제작하였습니다.</span>
+        <span className='pjExplain'>- 계속해서 발전시켜 추후에는 개인 블로그 페이지로 만들어 나갈 예정입니다.</span>
+        <ProjectBox>
+          <span className='pjTitle'>프로젝트 기간</span>
+          <span className='pjContent'>2023.11 ~ 진행 중</span>
+        </ProjectBox>
+        <hr/>
+        <ProjectBox>
+          <span className='pjTitle'>사용 기술</span>
+          <span className='pjContent'> VS Code / React.js / Styled-components
+          </span>
         </ProjectBox>
       </ExBox>
     </>
@@ -101,7 +124,7 @@ const ExBox = styled.div`
 
   a {
     color: #079707;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     margin: 15px 0;
     text-decoration: none;
@@ -111,6 +134,14 @@ const ExBox = styled.div`
       color: blue;
       text-decoration: underline;
     }
+  }
+
+  p {
+    color: #079707;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+    width: fit-content;
   }
 
   .pjExplain{
