@@ -16,7 +16,7 @@ const Home = () => {
       <DivLine />
       <Experience />
       <DivLine />
-      <h2 className='tytext'>Thank you!</h2>
+      <h2 className='tytext'>{"<> Thank you! </>"}</h2>
     </HomeField>
   )
 }
