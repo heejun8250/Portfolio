@@ -15,8 +15,21 @@ const SideList = ({ width = 280, children }) => {
       setX(-width);
       setIsOpen(false);
     }
-    console.log('aaaa');
   };
+
+  useEffect(() => {
+    const handleClose = (e) => {
+      if (isOpen && side.current && !side.current.contains(e.target)) {
+        setX(-width);
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClose);
+    return () => {
+      document.removeEventListener('mousedown', handleClose);
+    };
+  }, [isOpen, width]);
 
   return (
     <SideListBox 
@@ -38,7 +51,8 @@ export default SideList
 
 
 const SideListBox = styled.div`
-  border-left: lightgray solid 2px;
+  box-shadow: inset 1.2px 0 0 lightgray;
+  border-radius: 20px 0 0 20px;
   width: ${(props) => props.width};
   transform: ${(props) => props.transform};
   height: 100%;
@@ -52,30 +66,30 @@ const SideListBox = styled.div`
 
 const ListOpenBtn = styled(BiMenu)`
     position: relative;
-    top: 17.5px;
+    top: 15px;
     width: 32px;
     height: 32px;
     z-index: 9999999999999;
     overflow: hidden;
     left: -50px;
-    color: gray;
+    color: black;
 
   &:hover{
-    color: black;
+    color: gray;
   }
 `
 
 const ListCloseBtn = styled(BiArrowToRight)`
     position: relative;
-    top: 17.5px;
+    top: 15px;
     width: 32px;
     height: 32px;
     z-index: 9999999999999;
     overflow: hidden;
     left: 10px;
-    color: gray;
+    color: black;
 
   &:hover{
-    color: black;
+    color: gray;
   }
 `
