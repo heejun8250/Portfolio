@@ -14,7 +14,7 @@ export default SideContents
 
 const SideContentsBox = styled.div`
   margin-top: 30px;
-  padding: 10px;
+  padding: 10px 0 0 20px;
   display: flex;
   flex-direction: column;
 
