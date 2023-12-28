@@ -11,7 +11,7 @@ const Header = () => {
       {/* <a href='/'>{"<>🧑‍💻Dev Jun</>"}</a> */}
       <a href='/'>🧑‍💻Dev Jun</a>
       {/* <a href='/'>{"<🧑‍💻Dev Jun />"}</a> */}
-      <SideList width={298}>
+      <SideList>
         <SideContents />
       </SideList>
     </HeaderArea>
