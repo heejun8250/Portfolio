@@ -7,23 +7,28 @@ const Skill = () => {
       <SkillTitleWrap>Skill</SkillTitleWrap>
       <SkillBox>
         <div>
-          <span>Front-End</span>
+          <span>Front-End(Web)</span>
           <li>HTML/CSS, JavaScript, React.js, Styled-components</li>
         </div>
         <hr />
         <div>
+          <span>Front-End(App)</span>
+          <li>Kotlin</li>
+        </div>
+        <hr />
+        <div>
           <span>Back-End</span>
-          <li>Node.js, Firebase</li>
+          <li>Node.js</li>
         </div>
         <hr />
         <div>
           <span>Database</span>
-          <li>MySQL, OcacleDB</li>
+          <li>MySQL</li>
         </div>
         <hr />
         <div>
           <span>Tool</span>
-          <li>GitHub, Figma</li>
+          <li>VS Code, Android Studio, GitHub, Figma</li>
         </div>
       </SkillBox>
     </>
@@ -43,28 +48,28 @@ const SkillBox = styled.div`
   padding-left: 10px;
   margin-top: 20px;
   @media screen and (min-width: 1024px){
-    & div{
+    div{
       flex-direction: row;
       align-items: center;
 
-      & li {
-        margin-left: 100px;
+      li {
+        margin-left: 50px;
       }
     }
   }
   @media screen and (max-width: 1023px){
-    & div{
+    div{
       flex-direction: column;
       align-items: start;
     }
   }
 
-    & div {
+    div {
       display: flex;
       
 
-      & span {
-        width: 150px;
+      span {
+        width: 200px;
         font-size: 1.4rem;
         font-weight: bold;
       }
