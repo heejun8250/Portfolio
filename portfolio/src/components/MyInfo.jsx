@@ -5,7 +5,7 @@ const MyInfo = () => {
   return (
     <InfoBox>
         <MyInfoBox>
-          <img src="images/exImg.jpeg" width={210} height={230} />
+          <img src="images/profile12.jpg" width={210} height={230} />
           <div className="info_box">
             <div className="name_box">
               <div className="in_name_box">
@@ -45,7 +45,7 @@ const MyInfoBox = styled.div`
     justify-content: center;
     align-items: center;
 
-    & .info_box{
+    .info_box{
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -60,26 +60,26 @@ const MyInfoBox = styled.div`
     justify-content: center;
     align-items: center;
 
-    & .info_box{
+    .info_box{
       width: 100%;
       margin-top: 40px;
       align-items: center;
     }
   }
 
-  & img {
+  img {
     border-radius: 50%;
   }
 
-  & .info_box {
+  .info_box {
     
-    & .name_box {
+    .name_box {
       width: 100%;
       display: flex;
       justify-content: left;
       margin-bottom: 20px;
     
-      & .in_name_box {
+      .in_name_box {
         display: flex;
 
         h1 {
