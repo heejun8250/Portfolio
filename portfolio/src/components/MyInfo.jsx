@@ -5,7 +5,7 @@ const MyInfo = () => {
   return (
     <InfoBox>
         <MyInfoBox>
-          <img src="images/profile12.jpg" width={210} height={230} />
+          <img src="images/profileImg.jpg" width={210} height={230} />
           <div className="info_box">
             <div className="name_box">
               <div className="in_name_box">
