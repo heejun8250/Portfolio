@@ -31,6 +31,8 @@ const HeaderArea = styled.div`
   background-color: white;
   box-shadow: rgb(220, 220, 220) 0px 2px 5px;
   left: 0px;
+  z-index: 10;
+
     a {
       color: black;
       font-size: 20px;
