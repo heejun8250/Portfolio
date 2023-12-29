@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Senimo = () => {
+const SenimoMain = () => {
   return (
     <PjExplainField>
       Senimo
@@ -9,7 +9,7 @@ const Senimo = () => {
   )
 }
 
-export default Senimo
+export default SenimoMain
 
 const PjExplainField = styled.div`
   display: flex;

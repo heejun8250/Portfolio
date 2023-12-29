@@ -2,8 +2,8 @@ import {Routes, Route} from 'react-router-dom';
 
 import Header from './components/Header';
 import Home from "./components/Home";
-import TravelMate from './components/TravelMate';
-import Senimo from './components/Senimo';
+import TravelMateMain from './components/TravelMateMain';
+import SenimoMain from './components/SenimoMain';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/tm" element={<TravelMate />}></Route>
-        <Route path="/senimo" element={<Senimo />}></Route>
+        <Route path="/tm" element={<TravelMateMain />}></Route>
+        <Route path="/senimo" element={<SenimoMain />}></Route>
       </Routes>
     </div>
   );
