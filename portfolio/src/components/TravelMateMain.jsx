@@ -1,20 +1,44 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import styled, { keyframes } from 'styled-components'
 import { CgMouse } from "react-icons/cg";
 import RollOfTravelMate from './RollOfTravelMate';
 
 
 const TravelMateMain = () => {
+
+  const [scrollDirection, setScrollDirection] = useState('up');
+  const prevScrollY = useRef(0);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > prevScrollY.current) {
+      setScrollDirection('down');
+    } else {
+      setScrollDirection('up');
+    }
+
+    prevScrollY.current = currentScrollY;
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <PjExplainField>
       <ImgLogBox>
         <img src="images/travelmateLogo.png" />
       </ImgLogBox>
-      <MouseScrollBox>
+      <MouseScrollBox hide={scrollDirection === 'down'}>
         <CgMouse className='MIcon' />
         <span>Scroll</span>
       </MouseScrollBox>
-      <RollOfTravelMate/>
+      <RollOfTravelMate />
     </PjExplainField>
   )
 }
@@ -34,11 +58,11 @@ const sdbAnimation = keyframes`
 `;
 
 const PjExplainField = styled.div`
+  width: 50vw;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
-  height: 100%;
   padding-top: 85px;
   padding-bottom: 85px;
   margin: auto;
@@ -75,10 +99,11 @@ const MouseScrollBox = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: absolute;
-  top: 90%;
+  position: fixed;
+  top: ${({ hide }) => (hide ? '110%' : '90%')};
   left: 90%;
   transform: translate(-90%, -90%);
+  transition: top 0.8s ease-in-out;
 
   .MIcon {
     width: 35px;
