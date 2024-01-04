@@ -19,7 +19,7 @@ const Introduce = () => {
 export default Introduce
 
 const IntroTitleWrap = styled.div`
-  border-left: green solid 10px;
+  border-left: rgb(97, 65, 193) solid 10px;
   padding-left: 16px;
   font-size: 2.5rem;
   font-weight: bold;

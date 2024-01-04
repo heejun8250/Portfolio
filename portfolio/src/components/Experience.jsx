@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Experience = () => {
   return (
     <>
-      <ExTitleWrap>Education</ExTitleWrap>
+      <EduTitleWrap>Education</EduTitleWrap>
       <EduBox>
         <li>광주 인공지능사관학교</li>
         <span>- 기간 : 2023.06 ~ 2023.12</span>
@@ -105,11 +105,15 @@ const Experience = () => {
 export default Experience
 
 const ExTitleWrap = styled.div`
-  border-left: green solid 10px;
+  border-left: rgb(255, 144, 0) solid 10px;
   padding-left: 16px;
   font-size: 2.5rem;
   font-weight: bold;
 ` 
+
+const EduTitleWrap = styled(ExTitleWrap)`
+  border-left: rgb(70, 165, 209) solid 10px;
+`
 
 const ExBox = styled.div`
   margin-top: 20px;
@@ -123,7 +127,7 @@ const ExBox = styled.div`
   }
 
   a {
-    color: #079707;
+    color: rgb(255, 144, 0);
     font-size: 22px;
     font-weight: bold;
     margin: 15px 0;
@@ -137,7 +141,7 @@ const ExBox = styled.div`
   }
 
   p {
-    color: #079707;
+    color: rgb(255, 144, 0);
     font-size: 22px;
     font-weight: bold;
     margin: 15px 0;

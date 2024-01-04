@@ -69,8 +69,8 @@ const TmMyRoleTitleBox = styled.div`
 `
 
 const TmRollTitleWrap = styled.div`
-  border-left: green solid 8px;
-  padding-left: 12px;
+  border-left: rgb(70, 165, 209) solid 6px;
+  padding-left: 10px;
   font-size: 1.5rem;
   font-weight: bold;
 ` 
@@ -83,7 +83,7 @@ const TmPjExplainBox = styled.div`
 `
 
 const TmMyRole = styled.div`
-  color: #079707;
+  color: rgb(70, 165, 209);
   font-size: 1.375rem;
   font-weight: bold;
   margin-left: 10px;

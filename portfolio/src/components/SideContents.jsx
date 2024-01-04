@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const SideContents = () => {
   return (
     <SideContentsBox>
-      <a href='/tm'>TravelMate</a>
+      <a href='/travelmate'>TravelMate</a>
       <a href='/senimo'>Senimo</a>
     </SideContentsBox>
   )
@@ -23,7 +23,7 @@ const SideContentsBox = styled.div`
 
 
     &:hover{
-      color: green;
+      color: rgb(70, 165, 209);
       text-decoration: underline;
     }
   }

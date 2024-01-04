@@ -85,7 +85,7 @@ const MyInfoBox = styled.div`
         h1 {
           font-size: 2.5rem;
           margin: 0;
-          border-bottom: green solid 5px;
+          border-bottom: rgb(97, 65, 193) solid 5px;
         }
 
         h3 {
