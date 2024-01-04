@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/tm" element={<TravelMateMain />}></Route>
+        <Route path="/travelmate" element={<TravelMateMain />}></Route>
         <Route path="/senimo" element={<SenimoMain />}></Route>
       </Routes>
     </div>

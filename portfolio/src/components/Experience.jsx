@@ -14,7 +14,7 @@ const Experience = () => {
       <ExTitleWrap>Experience</ExTitleWrap>
       <ExBox>
         <li className='pjType'>Team Project</li>
-        <a href='/tm'>1. TravelMate</a>
+        <a href='/travelmate'>1. TravelMate</a>
         <span className='pjExplain'>- 성향·리뷰기반 동행자 추천 및 매칭 플랫폼</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
