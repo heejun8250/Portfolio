@@ -8,7 +8,7 @@ const Skill = () => {
       <SkillBox>
         <div>
           <span>Front-End(Web)</span>
-          <li>HTML/CSS, JavaScript, React.js, Styled-components</li>
+          <li>HTML, CSS, JavaScript, React.js, Styled-components</li>
         </div>
         <hr />
         <div>
