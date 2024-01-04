@@ -59,7 +59,7 @@ const RollOfTravelMate = () => {
 export default RollOfTravelMate
 
 const RollField = styled.div`
-  margin-top: 570px;
+  margin-top: 15vh;
   padding-top: 40px;
 `
 

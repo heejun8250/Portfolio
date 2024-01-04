@@ -74,21 +74,20 @@ const PjExplainField = styled.div`
 const ImgLogBox = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 75vh;
 
   @media screen and (max-width: 1024px){
       img {
-      width: 50%;
+      width: 50vw;
     }
   }
 
   @media screen and (min-width: 1023px){
       img {
-      width: 35%;
+      width: 35vw;
+      height: 30vh;
     }
   }
 `
