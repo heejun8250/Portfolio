@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Experience = () => {
   return (
@@ -14,7 +15,7 @@ const Experience = () => {
       <ExTitleWrap>Experience</ExTitleWrap>
       <ExBox>
         <li className='pjType'>Team Project</li>
-        <a href='/travelmate'>1. TravelMate</a>
+        <Link to='/travelmate'>1. TravelMate</Link>
         <span className='pjExplain'>- 성향·리뷰기반 동행자 추천 및 매칭 플랫폼</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
@@ -47,7 +48,7 @@ const Experience = () => {
           </div>
         </ProjectBox>
 
-        <a href='/senimo'>2. Senimo</a>
+        <Link to='/senimo'>2. Senimo</Link>
         <span className='pjExplain'>- 액티브 시니어층을 위한 모임 커뮤니티 플랫폼 앱</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
