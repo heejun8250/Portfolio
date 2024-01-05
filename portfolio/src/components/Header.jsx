@@ -5,9 +5,13 @@ import SideContents from './SideContents';
 
 
 const Header = () => {
+
+  const publicUrl = process.env.PUBLIC_URL;
+
   return (
     <HeaderArea>
-      <a href='/Portfolio'>🧑‍💻Dev Jun</a>
+      {/* <a href='/Portfolio'>🧑‍💻Dev Jun</a> */}
+      <img src={`${publicUrl}/images/webLogo.png`} alt='타이틀 이미지' width={45} height={45}></img>
       <SideList>
         <SideContents />
       </SideList>
@@ -20,7 +24,7 @@ export default Header;
 const HeaderArea = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   position: fixed;
   -webkit-box-align: center;
   width: 100%;
@@ -35,5 +39,9 @@ const HeaderArea = styled.div`
       font-size: 20px;
       font-weight: 500;
       text-decoration: none;
+    }
+
+    img {
+      margin-left: 20px;
     }
 `
