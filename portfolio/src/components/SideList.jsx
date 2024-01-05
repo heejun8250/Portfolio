@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { BiMenu, BiArrowToRight } from "react-icons/bi";
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const SideList = ({ width = 280, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,11 +18,15 @@ const SideList = ({ width = 280, children }) => {
     }
   };
 
+  const closeSideList = () => {
+    setX(-width);
+    setIsOpen(false);
+  };
+
   useEffect(() => {
     const handleClose = (e) => {
       if (isOpen && side.current && !side.current.contains(e.target)) {
-        setX(-width);
-        setIsOpen(false);
+        closeSideList()
       }
     };
 
@@ -42,7 +47,11 @@ const SideList = ({ width = 280, children }) => {
         :
         <ListOpenBtn onClick={ListOpen} />
       }
-      <div>{children}</div>
+      <div>
+        <Link to="/" onClick={closeSideList}>
+          {children}
+        </Link>
+      </div>
     </SideListBox>
   )
 }
@@ -65,14 +74,14 @@ const SideListBox = styled.div`
 `
 
 const ListOpenBtn = styled(BiMenu)`
-    position: relative;
-    top: 15px;
-    width: 32px;
-    height: 32px;
-    z-index: 9999999999999;
-    overflow: hidden;
-    left: -50px;
-    color: black;
+  position: relative;
+  top: 15px;
+  width: 32px;
+  height: 32px;
+  z-index: 9999999999999;
+  overflow: hidden;
+  left: -50px;
+  color: black;
 
   &:hover{
     color: gray;
@@ -80,14 +89,14 @@ const ListOpenBtn = styled(BiMenu)`
 `
 
 const ListCloseBtn = styled(BiArrowToRight)`
-    position: relative;
-    top: 15px;
-    width: 32px;
-    height: 32px;
-    z-index: 9999999999999;
-    overflow: hidden;
-    left: 10px;
-    color: black;
+  position: relative;
+  top: 15px;
+  width: 32px;
+  height: 32px;
+  z-index: 9999999999999;
+  overflow: hidden;
+  left: 10px;
+  color: black;
 
   &:hover{
     color: gray;
