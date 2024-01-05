@@ -7,6 +7,15 @@ import RollOfTravelMate from './RollOfTravelMate';
 const TravelMateMain = () => {
 
   const publicUrl = process.env.PUBLIC_URL;
+
+  const useScrollToTop = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  };
+
+  useScrollToTop()
+
   const [scrollDirection, setScrollDirection] = useState('up');
   const prevScrollY = useRef(0);
 

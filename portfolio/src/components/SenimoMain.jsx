@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 
 const SenimoMain = () => {
+
+  const useScrollToTop = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  };
+
+  useScrollToTop()
+
   return (
     <PjExplainField>
       Senimo
