@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const SideContents = () => {
   return (
     <SideContentsBox>
-      <a href='/travelmate'>TravelMate</a>
-      <a href='/senimo'>Senimo</a>
+      <Link to='/travelmate'>TravelMate</Link>
+      <Link to='/senimo'>Senimo</Link>
     </SideContentsBox>
   )
 }
