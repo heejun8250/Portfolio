@@ -2,14 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import SideList from './SideList';
 import SideContents from './SideContents';
-import { Link } from 'react-router-dom';
-
 
 
 const Header = () => {
   return (
     <HeaderArea>
-      <Link href='/'>🧑‍💻Dev Jun</Link>
+      <a href='/Portfolio'>🧑‍💻Dev Jun</a>
       <SideList>
         <SideContents />
       </SideList>
