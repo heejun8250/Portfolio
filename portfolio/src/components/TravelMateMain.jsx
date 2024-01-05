@@ -32,7 +32,7 @@ const TravelMateMain = () => {
   return (
     <PjExplainField>
       <ImgLogBox>
-        <img src="images/travelmateLogo.png" />
+        <img src="images/travelmateLogo.png" alt='TravelMate 로고'/>
       </ImgLogBox>
       <MouseScrollBox hide={scrollDirection === 'down'}>
         <CgMouse className='MIcon' />
