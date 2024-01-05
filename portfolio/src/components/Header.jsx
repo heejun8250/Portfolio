@@ -2,15 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import SideList from './SideList';
 import SideContents from './SideContents';
+import { Link } from 'react-router-dom';
 
 
 
 const Header = () => {
   return (
     <HeaderArea>
-      {/* <a href='/'>{"<>🧑‍💻Dev Jun</>"}</a> */}
-      <a href='/'>🧑‍💻Dev Jun</a>
-      {/* <a href='/'>{"<🧑‍💻Dev Jun />"}</a> */}
+      <Link href='/'>🧑‍💻Dev Jun</Link>
       <SideList>
         <SideContents />
       </SideList>
