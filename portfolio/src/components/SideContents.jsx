@@ -20,8 +20,9 @@ const SideContentsBox = styled.div`
   flex-direction: column;
 
   a {
+    color: black;
     margin-bottom: 20px;
-
+    text-decoration: none;
 
     &:hover{
       color: rgb(70, 165, 209);

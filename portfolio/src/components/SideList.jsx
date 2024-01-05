@@ -71,6 +71,10 @@ const SideListBox = styled.div`
   right: 0;
   transition: 0.4s ease;
   z-index: 9999;
+
+  a {
+    text-decoration: none;
+  }
 `
 
 const ListOpenBtn = styled(BiMenu)`
