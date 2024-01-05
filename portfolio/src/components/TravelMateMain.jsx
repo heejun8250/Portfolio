@@ -6,6 +6,7 @@ import RollOfTravelMate from './RollOfTravelMate';
 
 const TravelMateMain = () => {
 
+  const publicUrl = process.env.PUBLIC_URL;
   const [scrollDirection, setScrollDirection] = useState('up');
   const prevScrollY = useRef(0);
 
@@ -32,7 +33,7 @@ const TravelMateMain = () => {
   return (
     <PjExplainField>
       <ImgLogBox>
-        <img src="images/travelmateLogo.png" alt='TravelMate 로고'/>
+        <img src={`${publicUrl}/images/travelmateLogo.png`} alt='TravelMate 로고'/>
       </ImgLogBox>
       <MouseScrollBox hide={scrollDirection === 'down'}>
         <CgMouse className='MIcon' />

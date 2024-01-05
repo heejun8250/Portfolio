@@ -2,10 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 
 const MyInfo = () => {
+
+  const publicUrl = process.env.PUBLIC_URL;
+
   return (
     <InfoBox>
         <MyInfoBox>
-          <img src="images/profileImg.jpg" alt='프로필 이미지' width={210} height={230} />
+          <img src={`${publicUrl}/images/profileImg.jpg`} alt='프로필 이미지' width={210} height={230} />
           <div className="info_box">
             <div className="name_box">
               <div className="in_name_box">
