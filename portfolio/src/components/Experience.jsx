@@ -16,7 +16,7 @@ const Experience = () => {
       <ExBox>
         <li className='pjType'>Team Project</li>
         <Link to='/travelmate'>1. TravelMate</Link>
-        <span className='pjExplain'>- 성향·리뷰기반 동행자 추천 및 매칭 플랫폼</span>
+        <span className='pjExplain'>성향·리뷰기반 동행자 추천 및 매칭 플랫폼</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
           <span className='pjContent'>2023.07 ~ 2023.08 (약 3주)</span>
@@ -28,7 +28,7 @@ const Experience = () => {
         </ProjectBox>
         <hr/>
         <ProjectBox>
-          <span className='pjTitle'>사용 기술</span>
+          <span className='pjTitle'>기술 스택</span>
           <span className='pjContent'> VS Code / React.js / Firebase / Python / Flask / Github / KakaoMap API / 
             <br/> 로지스틱 회귀
           </span>
@@ -49,7 +49,7 @@ const Experience = () => {
         </ProjectBox>
 
         <Link to='/senimo'>2. Senimo</Link>
-        <span className='pjExplain'>- 액티브 시니어층을 위한 모임 커뮤니티 플랫폼 앱</span>
+        <span className='pjExplain'>액티브 시니어층을 위한 모임 커뮤니티 플랫폼 앱</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
           <span className='pjContent'>2023.10 ~ 2023.12 (약 6주)</span>
@@ -61,7 +61,7 @@ const Experience = () => {
         </ProjectBox>
         <hr/>
         <ProjectBox>
-          <span className='pjTitle'>사용 기술</span>
+          <span className='pjTitle'>기술 스택</span>
           <span className='pjContent'>Android Studio / Kotlin / Node.js / MySQL / Retrofit2 / JWT / Bcrypt / Github / Figma</span>
         </ProjectBox>
         <hr/>
@@ -84,17 +84,16 @@ const Experience = () => {
         <li className='pjType'>Personal Project</li>
         <p>1. Portfolio Page</p>
         <span className='pjExplain'>(현재 페이지)</span>
-        <span className='pjExplain'>- 저를 소개하고 교육기간 동안 수행한 프로젝트를 정리하기 위해 만든 포트폴리오 페이지입니다.</span>
-        <span className='pjExplain'>- React.js를 사용하였고 화면 크기에 따라 변화하는 반응형 웹사이트로 제작하였습니다.</span>
-        <span className='pjExplain'>- Styled-components를 사용해 보고자 디자인은 Styled-components를 사용하여 제작하였습니다.</span>
-        <span className='pjExplain'>- 계속해서 발전시켜 추후에는 개인 블로그 페이지로 만들어 나갈 예정입니다.</span>
+        <span className='pjExplain'>저를 소개하고 교육기간 동안 수행한 프로젝트를 정리하기 위해 만든 포트폴리오 페이지입니다.</span>
+        <span className='pjExplain'>React.js를 사용하였고 화면 크기에 따라 변화하는 반응형 웹사이트로 제작하였습니다.</span>
+        <span className='pjExplain'>Styled-components를 사용해 보고자 디자인은 Styled-components를 사용하여 제작하였습니다.</span>
         <ProjectBox>
           <span className='pjTitle'>프로젝트 기간</span>
           <span className='pjContent'>2023.11 ~ 진행 중</span>
         </ProjectBox>
         <hr/>
         <ProjectBox>
-          <span className='pjTitle'>사용 기술</span>
+          <span className='pjTitle'>기술 스택</span>
           <span className='pjContent'> VS Code / React.js / Styled-components
           </span>
         </ProjectBox>
