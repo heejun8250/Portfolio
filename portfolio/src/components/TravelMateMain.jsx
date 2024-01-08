@@ -41,9 +41,11 @@ const TravelMateMain = () => {
 
   return (
     <PjExplainField>
-      <ImgLogBox>
-        <img src={`${publicUrl}/images/travelmateLogo.png`} alt='TravelMate 로고'/>
-      </ImgLogBox>
+      <BackGroundImg imgUrl={`${publicUrl}/images/travelMateBg8.jpg`}>
+        <ImgLogBox>
+          <img src={`${publicUrl}/images/travelmateLogo.png`} alt='TravelMate 로고'/>
+        </ImgLogBox>
+      </BackGroundImg>
       <MouseScrollBox hide={scrollDirection === 'down'}>
         <CgMouse className='MIcon' />
         <span>Scroll</span>
@@ -68,16 +70,32 @@ const sdbAnimation = keyframes`
 `;
 
 const PjExplainField = styled.div`
-  width: 50vw;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 85px;
   padding-bottom: 85px;
-  margin: auto;
-  @media screen and (max-width: 1024px){
-    width: 80%;
+`
+
+const BackGroundImg = styled.div` 
+  height: 100vh;
+
+  &::before{
+    content: "";
+    background-image: ${({ imgUrl }) => `url(${imgUrl})`};
+    background-size: cover;
+    background-repeat: no-repeat; 
+    opacity: 0.5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    @media screen and (max-width: 1024px){
+    background-position: center;
+    }
   }
 `
 
@@ -87,17 +105,21 @@ const ImgLogBox = styled.div`
   align-items: center;
   width: 100%;
   height: 75vh;
+  padding-top: 85px;
+
+  img {
+    z-index: 1;
+  }
 
   @media screen and (max-width: 1024px){
       img {
-      width: 50vw;
+      width: 70vw;
     }
   }
 
   @media screen and (min-width: 1023px){
       img {
-      width: 35vw;
-      height: 30vh;
+      width: 40vw;
     }
   }
 `
