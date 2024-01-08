@@ -24,7 +24,7 @@ const TravelMateMain = () => {
 
     if (currentScrollY > prevScrollY.current) {
       setScrollDirection('down');
-    } else {
+    } else if (currentScrollY < 100) {
       setScrollDirection('up');
     }
 
@@ -109,7 +109,7 @@ const MouseScrollBox = styled.div`
   align-items: center;
   flex-direction: column;
   position: fixed;
-  top: ${({ hide }) => (hide ? '110%' : '90%')};
+  top: ${({ hide }) => (hide ? '115%' : '90%')};
   left: 90%;
   transform: translate(-90%, -90%);
   transition: top 0.8s ease-in-out;
