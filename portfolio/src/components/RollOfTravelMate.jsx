@@ -59,8 +59,17 @@ const RollOfTravelMate = () => {
 export default RollOfTravelMate
 
 const RollField = styled.div`
-  margin-top: 15vh;
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+
+  @media screen and (max-width: 1024px){
+    width: 80%;
+  }
 `
 
 const TmMyRoleTitleBox = styled.div`
